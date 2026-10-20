@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from "next";
-import { Oxanium, Manrope, Fraunces, Bricolage_Grotesque } from "next/font/google";
+import { Inter_Tight, Manrope, Fraunces, Bricolage_Grotesque } from "next/font/google";
 import { site } from "@/content/site";
 import "@/styles/globals.css";
 
-const display = Oxanium({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["500", "600", "700"] });
+const display = Inter_Tight({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["500", "600", "700", "800"] });
 const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 // Typsnitt som bara används i de konceptuella förhandsvisningarna.
 const serif = Fraunces({ subsets: ["latin"], variable: "--font-serif", display: "swap", style: ["normal", "italic"], axes: ["opsz"] });

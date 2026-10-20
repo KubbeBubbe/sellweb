@@ -9,7 +9,7 @@ Mörk, filmisk studio. Bredd, lugn och precision: stora rubriker i en kantig, te
 - Yta: `#04050a` · `#080a12` · `#0e111d` · `#161a2b`
 - Text: `#eceffa` / `#a9b0c8` / `#8089a6` (kontrast mot bakgrund ≥ 4.5:1 för brödtext)
 - Accent: `#5b5bff` (knappar, vit text 4.8:1), `#98a0ff` (länkar/ikoner), violett `#9b7bff` endast för Exclusive
-- Typ: Oxanium (rubriker) + Manrope (brödtext). Fraunces och Bricolage Grotesque används bara inne i konceptförhandsvisningarna.
+- Typ: Inter Tight (rubriker, fet och tät) + Manrope (brödtext). Fraunces och Bricolage Grotesque används bara inne i konceptförhandsvisningarna.
 - Radier: 0.5 / 0.9 / 1.5 rem. Rymd: 4-punktsskala.
 
 ## Principer
