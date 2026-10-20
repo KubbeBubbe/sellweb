@@ -20,7 +20,7 @@ export function Process() {
     <section className="section process" id="process" aria-labelledby="process-title">
       <div className="wrap process-layout">
         <div className="process-head">
-          <h2 id="process-title">Från första samtalet till lansering.</h2>
+          <h2 id="process-title" data-reveal="words">Från första samtalet till lansering.</h2>
           <p>Fyra steg, tydlig kommunikation hela vägen. Du vet alltid var vi är och vad som händer härnäst.</p>
         </div>
         <ol className="timeline" ref={listRef}>

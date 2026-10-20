@@ -1,27 +1,27 @@
 /* Designtokens – ändra här för att byta uttryck på hela webbplatsen. */
 :root {
   /* Yta: djupa blåsvarta lager */
-  --ink-0: #04050a;
-  --ink-1: #080a12;
-  --ink-2: #0e111d;
-  --ink-3: #161a2b;
+  --ink-0: #040a1c;
+  --ink-1: #07122a;
+  --ink-2: #0b1a3a;
+  --ink-3: #122550;
 
   /* Linjer */
-  --line: rgb(176 190 255 / 0.1);
-  --line-strong: rgb(176 190 255 / 0.22);
+  --line: rgb(130 175 255 / 0.13);
+  --line-strong: rgb(130 175 255 / 0.26);
 
   /* Text */
-  --text: #eceffa;
-  --text-2: #a9b0c8;
-  --text-3: #8089a6;
+  --text: #eaf2ff;
+  --text-2: #a9bddf;
+  --text-3: #8197bf;
 
   /* Accent: elektrisk ultramarin med en ljus ton för text */
-  --accent: #5b5bff;
-  --accent-press: #4a4aeb;
-  --accent-text: #98a0ff;
-  --accent-hi: #c9ceff;
-  --violet: #9b7bff;
-  --glow: rgb(91 91 255 / 0.35);
+  --accent: #2860ee;
+  --accent-press: #1f50d0;
+  --accent-text: #7fb2ff;
+  --accent-hi: #c3dcff;
+  --violet: #4dd0ff;
+  --glow: rgb(40 110 255 / 0.4);
 
   --ok: #6ee7b7;
   --danger: #ff8fa0;
@@ -31,7 +31,7 @@
   --font-b: var(--font-body), "Segoe UI", system-ui, sans-serif;
   --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
-  --fs-hero: clamp(1.85rem, 0.9rem + 4.6vw, 3.55rem);
+  --fs-hero: clamp(2rem, 0.9rem + 5vw, 3.9rem);
   --fs-h2: clamp(1.55rem, 1rem + 2.4vw, 2.7rem);
   --fs-h3: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
   --fs-lead: clamp(1.05rem, 1rem + 0.3vw, 1.25rem);
@@ -58,5 +58,7 @@
   --r-lg: 1.5rem;
 
   --ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+  --sy: 0;
+  --p: 0;
   --nav-h: 4.25rem;
 }

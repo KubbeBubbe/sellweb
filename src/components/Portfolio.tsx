@@ -14,8 +14,8 @@ export function Portfolio() {
     <section className="section portfolio" id="projekt" aria-labelledby="projects-title">
       <div className="wrap">
         <div className="section-head">
-          <h2 id="projects-title">Fem riktningar, fem helt olika uttryck.</h2>
-          <p>Det här är konceptprojekt som vi tagit fram för att visa hur olika en hemsida kan se ut beroende på verksamhet. De är inte riktiga kunduppdrag.</p>
+          <h2 id="projects-title" data-reveal="words">Fem riktningar, fem helt olika uttryck.</h2>
+          <p data-reveal="up">Det här är konceptprojekt som vi tagit fram för att visa hur olika en hemsida kan se ut beroende på verksamhet. De är inte riktiga kunduppdrag.</p>
         </div>
 
         <div className="filters" role="group" aria-label="Filtrera projekt efter kategori">
@@ -26,10 +26,10 @@ export function Portfolio() {
           ))}
         </div>
 
-        <ul className="project-grid" data-filter={filter === "Alla" ? "all" : "one"} aria-live="polite">
+        <ul className="project-grid" data-stagger data-filter={filter === "Alla" ? "all" : "one"} aria-live="polite">
           {shown.map((p) => (
-            <li key={p.slug} className="project" style={{ "--tone": p.tone } as React.CSSProperties}>
-              <div className="project-visual">
+            <li key={p.slug} className="project" data-reveal="up" style={{ "--tone": p.tone } as React.CSSProperties}>
+              <div className="project-visual" data-par>
                 <BrowserFrame slug={p.slug} label={`${p.title} · konceptprojekt`} />
               </div>
               <div className="project-meta">

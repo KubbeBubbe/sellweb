@@ -11,14 +11,14 @@ export function Faq() {
     <section className="section faq" id="fragor" aria-labelledby="faq-title">
       <div className="wrap faq-layout">
         <div className="faq-head">
-          <h2 id="faq-title">Vanliga frågor.</h2>
+          <h2 id="faq-title" data-reveal="words">Vanliga frågor.</h2>
           <p>Hittar du inte svaret? Berätta om projektet i formuläret längst ned, så svarar vi.</p>
         </div>
-        <div className="accordion">
+        <div className="accordion" data-stagger>
           {faq.map((item, i) => {
             const isOpen = open === i;
             return (
-              <div className="acc-item" key={item.q} data-open={isOpen}>
+              <div className="acc-item" key={item.q} data-open={isOpen} data-reveal="side">
                 <h3>
                   <button id={`${uid}-b${i}`} aria-expanded={isOpen} aria-controls={`${uid}-p${i}`} onClick={() => setOpen(isOpen ? null : i)}>
                     <span>{item.q}</span>

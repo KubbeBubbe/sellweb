@@ -8,6 +8,8 @@ import { Why } from "@/components/Why";
 import { Faq } from "@/components/Faq";
 import { ClosingCta } from "@/components/ClosingCta";
 import { Contact } from "@/components/Contact";
+import { ScrollFx } from "@/components/ScrollFx";
+import { Marquee } from "@/components/Marquee";
 import { Footer } from "@/components/Footer";
 import { faq } from "@/content/faq";
 import { site } from "@/content/site";
@@ -33,9 +35,11 @@ export default function Home() {
   return (
     <>
       <a className="skip-link" href="#main">Hoppa till innehållet</a>
+      <ScrollFx />
       <Nav />
       <main id="main">
         <Hero />
+        <Marquee />
         <Industries />
         <Portfolio />
         <Pricing />

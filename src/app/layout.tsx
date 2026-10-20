@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Unbounded, Instrument_Sans, Fraunces, Bricolage_Grotesque } from "next/font/google";
+import { Sora, Manrope, Fraunces, Bricolage_Grotesque } from "next/font/google";
 import { site } from "@/content/site";
 import "@/styles/globals.css";
 
-const display = Unbounded({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["400", "500", "600"] });
-const body = Instrument_Sans({ subsets: ["latin"], variable: "--font-body", display: "swap" });
+const display = Sora({ subsets: ["latin"], variable: "--font-display", display: "swap", weight: ["500", "600", "700"] });
+const body = Manrope({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 // Typsnitt som bara används i de konceptuella förhandsvisningarna.
 const serif = Fraunces({ subsets: ["latin"], variable: "--font-serif", display: "swap", style: ["normal", "italic"], axes: ["opsz"] });
 const grotesk = Bricolage_Grotesque({ subsets: ["latin"], variable: "--font-grotesk", display: "swap", weight: ["600", "800"] });
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#04050a",
+  themeColor: "#040a1c",
   colorScheme: "dark",
 };
 

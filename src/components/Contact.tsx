@@ -6,7 +6,7 @@ export function Contact() {
     <section className="section contact" id="kontakt" aria-labelledby="contact-title">
       <div className="wrap contact-layout">
         <div className="contact-intro">
-          <h2 id="contact-title">Berätta om ditt projekt.</h2>
+          <h2 id="contact-title" data-reveal="words">Berätta om ditt projekt.</h2>
           <p>Fyll i formuläret så hör vi av oss för att prata igenom vad du behöver och föreslå ett paket. Det är kostnadsfritt att fråga och du förbinder dig inte till något.</p>
           <ul className="contact-points">
             <li>Du får svar från en människa som läst din förfrågan.</li>
@@ -23,7 +23,7 @@ export function Contact() {
           )}
           <span className="sr-only">{site.name}</span>
         </div>
-        <div className="contact-card">
+        <div className="contact-card" data-reveal="up">
           <ContactForm />
         </div>
       </div>

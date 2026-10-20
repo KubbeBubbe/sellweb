@@ -7,12 +7,12 @@ export function Industries() {
     <section className="section" id="tjanster" aria-labelledby="industries-title">
       <div className="wrap">
         <div className="section-head">
-          <h2 id="industries-title">En hemsida för just din verksamhet.</h2>
-          <p>Varje hemsida utformas efter verksamheten, målgruppen och företagets behov. Välj din bransch för att se ett exempel eller starta ett förslag.</p>
+          <h2 id="industries-title" data-reveal="words">En hemsida för just din verksamhet.</h2>
+          <p data-reveal="up">Varje hemsida utformas efter verksamheten, målgruppen och företagets behov. Välj din bransch för att se ett exempel eller starta ett förslag.</p>
         </div>
-        <ul className="industry-grid">
+        <ul className="industry-grid" data-stagger>
           {industries.map((i) => (
-            <li key={i.id} className="industry">
+            <li key={i.id} className="industry" data-reveal="scale">
               {i.projectSlug ? (
                 <a href={`/projekt/${i.projectSlug}`} className="industry-link">
                   <Icon name={i.icon} className="industry-icon" />

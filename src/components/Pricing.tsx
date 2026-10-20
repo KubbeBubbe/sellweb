@@ -12,15 +12,15 @@ export function Pricing() {
     <section className="section pricing" id="priser" aria-labelledby="pricing-title">
       <div className="wrap">
         <div className="section-head">
-          <h2 id="pricing-title">Tre nivåer. En som passar dig.</h2>
-          <p>Alla paket bygger på samma grund: skräddarsydd design, mobilanpassning och en tydlig process. Skillnaden är hur långt vi tar designen och funktionerna.</p>
+          <h2 id="pricing-title" data-reveal="words">Tre nivåer. En som passar dig.</h2>
+          <p data-reveal="up">Alla paket bygger på samma grund: skräddarsydd design, mobilanpassning och en tydlig process. Skillnaden är hur långt vi tar designen och funktionerna.</p>
         </div>
 
-        <div className="plans">
+        <div className="plans" data-stagger>
           {packages.map((p) => {
             const price = formatPrice(p.price);
             return (
-              <article key={p.id} className="plan" data-plan={p.id} data-recommended={p.recommended ? "true" : undefined} aria-labelledby={`plan-${p.id}`}>
+              <article key={p.id} className="plan" data-reveal="tilt" data-plan={p.id} data-recommended={p.recommended ? "true" : undefined} aria-labelledby={`plan-${p.id}`}>
                 {p.recommended && <span className="plan-badge">Rekommenderad</span>}
                 <header>
                   <h3 id={`plan-${p.id}`}>{p.name}</h3>
