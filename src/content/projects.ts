@@ -22,46 +22,6 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "nordhem-residens",
-    title: "Nordhem Residens",
-    category: "Fastigheter",
-    industry: "fastigheter",
-    concept: true,
-    summary: "Lyxig fastighetswebbplats med lugn, stor typografi och objekt i fokus.",
-    story: [
-      "Konceptet utgår från känslan av att kliva in i ett välkomponerat hem: varma stenfärger, stora marginaler och en serifftypografi som ger tyngd utan att bli stel.",
-      "Objektsidan är byggd runt det som en köpare faktiskt jämför – läge, yta och rum – med tydlig väg till visningsbokning.",
-    ],
-    direction: [
-      { label: "Uttryck", value: "Lugn, arkitektonisk, generös" },
-      { label: "Typografi", value: "Serif med hög kontrast" },
-      { label: "Färg", value: "Sten, sand och mörk skiffer" },
-    ],
-    highlights: ["Objektkort med nyckeltal", "Filtrering på område och storlek", "Visningsbokning i tre steg"],
-    suggestedPackage: "exclusive",
-    tone: "#c8b79a",
-  },
-  {
-    slug: "kvadrat",
-    title: "Kvadrat",
-    category: "E-handel",
-    industry: "ehandel",
-    concept: true,
-    summary: "Modern e-handelsbutik med kraftfulla färgblock och snabb produktupptäckt.",
-    story: [
-      "En butik för designade vardagsföremål, där färg och form får bära varumärket. Produkterna ligger i ett tydligt rutnät och varje kort visar det besökaren behöver för att ta ett beslut.",
-      "Konceptet visar hur kategorier, filter och varukorg kan hållas lätta att använda på mobil.",
-    ],
-    direction: [
-      { label: "Uttryck", value: "Lekfullt, tydligt, kontrastrikt" },
-      { label: "Typografi", value: "Kompakt grotesk i feta snitt" },
-      { label: "Färg", value: "Ljust underlag med starka färgblock" },
-    ],
-    highlights: ["Produktrutnät med snabbval", "Tydlig kategorinavigering", "Kassaflöde utan omvägar"],
-    suggestedPackage: "premium",
-    tone: "#ff6a3d",
-  },
-  {
     slug: "kallaren-14",
     title: "Källaren 14",
     category: "Restaurang",
@@ -80,26 +40,6 @@ export const projects: Project[] = [
     highlights: ["Meny med tydliga rubriker", "Bordsbokning inom räckhåll", "Öppettider och vägbeskrivning"],
     suggestedPackage: "premium",
     tone: "#b0405a",
-  },
-  {
-    slug: "lindgren-redovisning",
-    title: "Lindgren Redovisning",
-    category: "Tjänsteföretag",
-    industry: "konsult",
-    concept: true,
-    summary: "Professionell hemsida för ett tjänsteföretag som vill skapa förtroende direkt.",
-    story: [
-      "Ett lugnt, ljust och strukturerat uttryck för en verksamhet där trygghet är produkten. Tjänsterna förklaras på vanlig svenska och kontaktvägen är alltid synlig.",
-      "Konceptet visar hur ett Regular-paket kan se rent och trovärdigt ut utan att kännas som en mall.",
-    ],
-    direction: [
-      { label: "Uttryck", value: "Tryggt, tydligt, välordnat" },
-      { label: "Typografi", value: "Humanistisk sans med god läsbarhet" },
-      { label: "Färg", value: "Vitt, marinblått och mjuk grön accent" },
-    ],
-    highlights: ["Tjänster förklarade enkelt", "Tydlig kontaktväg i varje sektion", "Snabb och lättläst på mobil"],
-    suggestedPackage: "regular",
-    tone: "#2f6fed",
   },
   {
     slug: "vektor",

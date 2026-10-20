@@ -43,9 +43,8 @@ export function Hero() {
             <ellipse cx="300" cy="300" rx="220" ry="84" transform="rotate(-24 300 300)" className="inner" />
             <ellipse cx="300" cy="300" rx="290" ry="118" transform="rotate(-24 300 300)" className="sat" pathLength="1000" />
           </svg>
-          <div className="stage-layer l1" data-depth="1"><BrowserFrame slug="nordhem-residens" label="Nordhem Residens · konceptprojekt" /></div>
+          <div className="stage-layer l1" data-depth="1"><BrowserFrame slug="kallaren-14" label="Källaren 14 · konceptprojekt" /></div>
           <div className="stage-layer l2" data-depth="2"><BrowserFrame slug="vektor" label="Vektor · konceptprojekt" /></div>
-          <div className="stage-layer l3" data-depth="3"><BrowserFrame slug="kvadrat" label="Kvadrat · konceptprojekt" /></div>
           <span className="tick t1" aria-hidden="true">1440 × 900</span>
           <span className="tick t2" aria-hidden="true">390 × 844</span>
         </HeroParallax>

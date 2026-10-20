@@ -14,7 +14,7 @@ export function Portfolio() {
     <section className="section portfolio" id="projekt" aria-labelledby="projects-title">
       <div className="wrap">
         <div className="section-head">
-          <h2 id="projects-title" data-reveal="words">Fem riktningar, fem helt olika uttryck.</h2>
+          <h2 id="projects-title" data-reveal="words">Två riktningar, två helt olika uttryck.</h2>
           <p data-reveal="up">Det här är konceptprojekt som vi tagit fram för att visa hur olika en hemsida kan se ut beroende på verksamhet. De är inte riktiga kunduppdrag.</p>
         </div>
 

@@ -1,0 +1,75 @@
+/* ───────── Finslipning: plattare, mindre "AI-glöd" ─────────
+   Ersätter gradienter, glöd och pillerformer från tidigare sektioner. */
+
+/* Knappar: små radier, ingen glöd eller glans */
+.btn { border-radius: 6px; }
+.btn-primary { background-image: none; box-shadow: none; }
+.btn-primary:hover { box-shadow: none; --bg: #3a70ff; }
+.chip { border-radius: 6px; }
+.concept-badge { border-radius: 4px; }
+.plan-for li { border-radius: 4px; }
+.menu-btn { border-radius: 8px; }
+
+/* Förloppslinje utan sken */
+.progress { background: var(--accent-text); box-shadow: none; height: 2px; }
+
+/* Hero: en platt blå platta bakom fönstren i stället för glöd */
+.hero-glow { display: none; }
+.hero-grid { opacity: 0.6; }
+.stage { isolation: isolate; }
+.stage::before { content: ""; position: absolute; z-index: -1; inset: 14% -7% -6% 22%; background: var(--accent); }
+.tick { display: none; }
+.orbit ellipse { stroke: rgb(195 220 255 / 0.35); }
+.orbit .sat { filter: none; }
+.browser { border-radius: 6px; box-shadow: 0 24px 50px -24px rgb(0 0 0 / 0.7); }
+
+/* Branscher: typografisk lista i stället för ikonkort */
+.industry-list { border-top: 1px solid var(--line-strong); }
+.industry-row { border-bottom: 1px solid var(--line-strong); }
+.industry-link { display: grid; gap: var(--s-2); padding: var(--s-5) var(--s-2); transition: background-color 0.25s, color 0.25s, padding 0.35s var(--ease); }
+.industry-link h3 { font-size: clamp(1.5rem, 1rem + 2.2vw, 2.6rem); line-height: 1.05; }
+.industry-link p { color: var(--text-2); max-width: 44ch; transition: color 0.25s; }
+.industry-more { display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; font-size: var(--fs-small); color: var(--accent-text); transition: color 0.25s; }
+.industry-more svg { width: 1.1em; height: 1.1em; transition: transform 0.3s var(--ease); }
+.industry-link:hover { background: var(--accent); padding-inline: var(--s-5); }
+.industry-link:hover p, .industry-link:hover .industry-more { color: #fff; }
+.industry-link:hover .industry-more svg { transform: translateX(6px); }
+@media (min-width: 52rem) {
+  .industry-link { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr) 11rem; align-items: center; gap: var(--s-6); padding-block: var(--s-5); }
+  .industry-more { justify-content: flex-end; }
+}
+
+/* Projekt och priser: solida ytor, små radier */
+.plan { border-radius: 8px; background: var(--ink-1); }
+.plan[data-recommended="true"] { background: var(--accent); border-color: var(--accent); box-shadow: none; }
+.plan[data-recommended="true"] .plan-tagline,
+.plan[data-recommended="true"] .plan-audience,
+.plan[data-recommended="true"] .plan-features li { color: #eef4ff; }
+.plan[data-recommended="true"] .plan-features svg { color: #fff; }
+.plan[data-recommended="true"] .plan-for li { border-color: rgb(255 255 255 / 0.4); color: #fff; }
+.plan[data-recommended="true"] .plan-price { border-color: rgb(255 255 255 / 0.3); }
+.plan[data-recommended="true"] .plan-price small { color: #eef4ff; }
+.plan[data-recommended="true"] .btn-primary { --bg: #fff; --fg: var(--accent-press); }
+.plan[data-recommended="true"] .btn-primary:hover { --bg: #eef4ff; }
+.plan-badge { background: var(--ink-0); color: #fff; border-radius: 4px; }
+.plan[data-plan="exclusive"] { background: var(--ink-0); border-color: var(--line-strong); }
+.plan[data-plan="exclusive"]::before, .plan[data-plan="exclusive"]::after { display: none; }
+.plan[data-plan="exclusive"] .plan-tagline, .plan[data-plan="exclusive"] .plan-features svg { color: var(--accent-text); }
+.contact-card, .detail-cta { border-radius: 8px; background: var(--ink-1); }
+.detail-cta { background: var(--ink-1); }
+.more a { border-radius: 6px; }
+.field input, .field select, .field textarea { border-radius: 4px; }
+.sent-icon { background: transparent; border: 1px solid var(--ok); }
+
+/* Avslut: platt färgyta och rutnät, inga suddiga klot */
+.closing { background: var(--accent); border-color: var(--accent); }
+.closing-bg i { display: none; }
+.closing-bg { background-image: linear-gradient(rgb(255 255 255 / 0.14) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 0.14) 1px, transparent 1px); mask-image: none; -webkit-mask-image: none; }
+.closing p { color: #e6efff; }
+.closing .btn-primary { --bg: #fff; --fg: var(--accent-press); }
+.closing .btn-primary:hover { --bg: var(--ink-0); --fg: #fff; }
+
+/* Steg och dekor */
+.step-n { box-shadow: none !important; }
+.step[data-on="true"] .step-n { background: var(--accent); }
+.marquee-track i { box-shadow: none; }

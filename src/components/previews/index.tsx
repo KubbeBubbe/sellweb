@@ -1,14 +1,8 @@
-import { Nordhem } from "./Nordhem";
-import { Kvadrat } from "./Kvadrat";
 import { Kallaren } from "./Kallaren";
-import { Lindgren } from "./Lindgren";
 import { Vektor } from "./Vektor";
 
 const map = {
-  "nordhem-residens": Nordhem,
-  kvadrat: Kvadrat,
   "kallaren-14": Kallaren,
-  "lindgren-redovisning": Lindgren,
   vektor: Vektor,
 } as const;
 

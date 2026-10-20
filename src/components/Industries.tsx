@@ -10,26 +10,28 @@ export function Industries() {
           <h2 id="industries-title" data-reveal="words">En hemsida för just din verksamhet.</h2>
           <p data-reveal="up">Varje hemsida utformas efter verksamheten, målgruppen och företagets behov. Välj din bransch för att se ett exempel eller starta ett förslag.</p>
         </div>
-        <ul className="industry-grid" data-stagger>
-          {industries.map((i) => (
-            <li key={i.id} className="industry" data-reveal="scale">
-              {i.projectSlug ? (
-                <a href={`/projekt/${i.projectSlug}`} className="industry-link">
-                  <Icon name={i.icon} className="industry-icon" />
-                  <h3>{i.title}</h3>
-                  <p>{i.text}</p>
-                  <span className="industry-more">Se konceptexempel <Icon name="arrow" /></span>
-                </a>
-              ) : (
-                <SelectLink industry={i.id} className="industry-link">
-                  <Icon name={i.icon} className="industry-icon" />
-                  <h3>{i.title}</h3>
-                  <p>{i.text}</p>
-                  <span className="industry-more">Starta ett förslag <Icon name="arrow" /></span>
-                </SelectLink>
-              )}
-            </li>
-          ))}
+        <ul className="industry-list" data-stagger>
+          {industries.map((i) => {
+            const inner = (
+              <>
+                <h3>{i.title}</h3>
+                <p>{i.text}</p>
+                <span className="industry-more">
+                  {i.projectSlug ? "Se konceptexempel" : "Starta ett förslag"}
+                  <Icon name="arrow" />
+                </span>
+              </>
+            );
+            return (
+              <li key={i.id} className="industry-row" data-reveal="side">
+                {i.projectSlug ? (
+                  <a href={`/projekt/${i.projectSlug}`} className="industry-link">{inner}</a>
+                ) : (
+                  <SelectLink industry={i.id} className="industry-link">{inner}</SelectLink>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </section>
