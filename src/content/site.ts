@@ -4,13 +4,13 @@
  */
 
 export const site = {
-  name: "Ljusår",
+  name: "Kvantum",
   descriptor: "Webbstudio",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   locale: "sv_SE",
-  title: "Ljusår – webbyrå för skräddarsydda hemsidor",
+  title: "Kvantum – webbyrå för skräddarsydda hemsidor",
   description:
-    "Ljusår bygger hemsidor som får företag att sticka ut. Välj mellan Regular, Premium och Exclusive – från stilrena företagssidor till exklusiva digitala upplevelser.",
+    "Kvantum bygger hemsidor som får företag att sticka ut. Välj mellan Regular, Premium och Exclusive – från stilrena företagssidor till exklusiva digitala upplevelser.",
   shortDescription:
     "Vi designar och bygger hemsidor efter verksamhetens mål, målgrupp och behov – inga generiska mallar.",
 } as const;

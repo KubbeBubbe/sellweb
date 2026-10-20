@@ -14,7 +14,7 @@
 
 .hero-inner { display: grid; gap: var(--s-8); align-items: center; }
 .hero-copy { position: relative; z-index: 2; }
-.hero h1 { font-size: var(--fs-hero); line-height: 1.08; letter-spacing: -0.03em; font-weight: 500; max-width: 14ch; }
+.hero h1 { font-size: var(--fs-hero); line-height: 1.08; letter-spacing: 0; font-weight: 600; max-width: 14ch; }
 .hw { display: inline-block; overflow: clip; vertical-align: top; padding-bottom: 0.08em; margin-bottom: -0.08em; }
 .hw > span { display: inline-block; animation: rise 0.9s var(--ease) both; animation-delay: calc(var(--i) * 70ms + 120ms); }
 @keyframes rise { from { transform: translateY(105%); } to { transform: none; } }
@@ -109,7 +109,7 @@
 .plan-for li { padding: 0.25rem 0.7rem; border-radius: 999px; border: 1px solid var(--line); font-size: 0.8rem; color: var(--text-2); }
 .plan-price { padding-block: var(--s-4); border-block: 1px solid var(--line); display: flex; align-items: baseline; gap: var(--s-2); flex-wrap: wrap; }
 .plan-price small { color: var(--text-2); font-size: var(--fs-small); }
-.plan-price strong { font-family: var(--font-d); font-weight: 500; font-size: 1.35rem; letter-spacing: -0.02em; }
+.plan-price strong { font-family: var(--font-d); font-weight: 500; font-size: 1.35rem; letter-spacing: 0.01em; }
 .plan-lead { font-weight: 600; font-size: var(--fs-small); color: var(--text); }
 .plan-features { display: grid; gap: var(--s-3); }
 .plan-features li { display: grid; grid-template-columns: 1.25rem 1fr; gap: var(--s-3); font-size: 0.95rem; color: var(--text-2); }

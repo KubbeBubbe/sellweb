@@ -1,7 +1,7 @@
-# Ljusår – webbyrå (Next.js)
+# Kvantum – webbyrå (Next.js)
 
 Komplett hemsida för en webbyrå med paketen **Regular**, **Premium** och **Exclusive**. Allt innehåll är på svenska.
-Byråns namn "Ljusår" är ett tillfälligt textbaserat varumärke – byt i `src/content/site.ts`.
+Byråns namn "Kvantum" är ett tillfälligt textbaserat varumärke – byt i `src/content/site.ts`.
 
 ```bash
 npm install
