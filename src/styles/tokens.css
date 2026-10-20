@@ -1,0 +1,62 @@
+/* Designtokens – ändra här för att byta uttryck på hela webbplatsen. */
+:root {
+  /* Yta: djupa blåsvarta lager */
+  --ink-0: #04050a;
+  --ink-1: #080a12;
+  --ink-2: #0e111d;
+  --ink-3: #161a2b;
+
+  /* Linjer */
+  --line: rgb(176 190 255 / 0.1);
+  --line-strong: rgb(176 190 255 / 0.22);
+
+  /* Text */
+  --text: #eceffa;
+  --text-2: #a9b0c8;
+  --text-3: #8089a6;
+
+  /* Accent: elektrisk ultramarin med en ljus ton för text */
+  --accent: #5b5bff;
+  --accent-press: #4a4aeb;
+  --accent-text: #98a0ff;
+  --accent-hi: #c9ceff;
+  --violet: #9b7bff;
+  --glow: rgb(91 91 255 / 0.35);
+
+  --ok: #6ee7b7;
+  --danger: #ff8fa0;
+
+  /* Typografi */
+  --font-d: var(--font-display), "Segoe UI", system-ui, sans-serif;
+  --font-b: var(--font-body), "Segoe UI", system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --fs-hero: clamp(1.85rem, 0.9rem + 4.6vw, 3.55rem);
+  --fs-h2: clamp(1.55rem, 1rem + 2.4vw, 2.7rem);
+  --fs-h3: clamp(1.1rem, 1rem + 0.5vw, 1.35rem);
+  --fs-lead: clamp(1.05rem, 1rem + 0.3vw, 1.25rem);
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+
+  /* Rymd: 4-punktsskala */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4.5rem;
+  --s-9: clamp(4.5rem, 3rem + 7vw, 9rem);
+
+  --gutter: clamp(1.25rem, 0.6rem + 3vw, 3rem);
+  --max: 78rem;
+
+  /* Radier: två nivåer med avsikt */
+  --r-sm: 0.5rem;
+  --r-md: 0.9rem;
+  --r-lg: 1.5rem;
+
+  --ease: cubic-bezier(0.22, 0.8, 0.24, 1);
+  --nav-h: 4.25rem;
+}

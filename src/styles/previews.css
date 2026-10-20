@@ -1,0 +1,115 @@
+/* ───────── Webbläsarram och skalning ───────── */
+.browser {
+  border-radius: var(--r-md); overflow: hidden; background: #0b0d16;
+  border: 1px solid var(--line-strong);
+  box-shadow: 0 30px 80px -30px rgb(0 0 0 / 0.8), 0 0 0 1px rgb(0 0 0 / 0.4);
+}
+.browser-bar { display: flex; align-items: center; gap: 6px; height: 2rem; padding-inline: 0.75rem; background: #12152a; border-bottom: 1px solid var(--line); }
+.browser-bar i { width: 0.5rem; height: 0.5rem; border-radius: 50%; background: rgb(255 255 255 / 0.18); }
+.browser-bar span { margin-left: 0.6rem; font-size: 0.7rem; color: var(--text-3); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.pv-frame { position: relative; container-type: inline-size; aspect-ratio: 1200 / 750; overflow: hidden; }
+.pv {
+  position: absolute; left: 0; top: 0; width: 1200px; height: 750px; overflow: hidden;
+  transform-origin: 0 0; transform: scale(tan(atan2(100cqw, 1200px)));
+  font-size: 18px; line-height: 1.4; text-align: left; user-select: none; pointer-events: none;
+}
+.pv h3 { font-family: inherit; font-weight: inherit; letter-spacing: normal; text-wrap: balance; }
+.pv p { max-width: none; }
+.pv header { display: flex; align-items: center; }
+.pv span, .pv em { font-style: normal; }
+
+/* ───────── Nordhem Residens: sten, serif, arkitektur ───────── */
+.pv-nordhem { background: #e9e2d4; color: #2b2723; font-family: var(--font-serif), Georgia, serif; }
+.pv-nordhem header { padding: 34px 64px; gap: 40px; font-size: 17px; font-family: var(--font-body), sans-serif; color: #5d564c; }
+.pv-nordhem header b { margin-right: auto; font-family: var(--font-serif), serif; font-weight: 400; font-size: 24px; letter-spacing: 0.34em; color: #2b2723; }
+.pv-nordhem-body { display: grid; grid-template-columns: 1fr 440px; gap: 70px; padding: 30px 64px 0 64px; align-items: start; }
+.pv-nordhem-kicker { font-family: var(--font-body), sans-serif; font-size: 17px; color: #8a7a5c; margin-bottom: 22px; }
+.pv-nordhem h3 { font-size: 84px; line-height: 1.02; font-weight: 300; letter-spacing: -0.025em; margin-bottom: 26px; }
+.pv-nordhem-lead { font-family: var(--font-body), sans-serif; font-size: 21px; color: #5d564c; max-width: 480px; margin-bottom: 36px; }
+.pv-nordhem dl { display: flex; gap: 46px; margin-bottom: 40px; }
+.pv-nordhem dt { font-family: var(--font-body), sans-serif; font-size: 14px; color: #8a7a5c; }
+.pv-nordhem dd { font-size: 34px; font-weight: 300; }
+.pv-nordhem-btn { display: inline-block; padding: 17px 36px; background: #2b2723; color: #e9e2d4; font-family: var(--font-body), sans-serif; font-size: 17px; }
+.pv-nordhem-arch { position: relative; height: 600px; border-radius: 220px 220px 0 0; overflow: hidden; background: linear-gradient(#cdd6d8 0%, #efe6d2 62%, #d9c9a8 62.2%); }
+.pv-nordhem-arch i { position: absolute; display: block; }
+.pv-nordhem-arch .sun { width: 120px; height: 120px; border-radius: 50%; background: #f6e9c6; left: 250px; top: 110px; }
+.pv-nordhem-arch .b1 { left: 40px; bottom: 140px; width: 230px; height: 230px; background: linear-gradient(90deg, #8d8473 0 70%, #756d5e 70%); }
+.pv-nordhem-arch .b2 { left: 200px; bottom: 140px; width: 210px; height: 330px; background: linear-gradient(90deg, #b3a78e 0 62%, #8d826c 62%); }
+.pv-nordhem-arch .b3 { left: 70px; bottom: 140px; width: 160px; height: 120px; background: repeating-linear-gradient(90deg, #2b2723 0 6px, transparent 6px 30px); opacity: .35; }
+.pv-nordhem-arch .water { left: 0; right: 0; bottom: 0; height: 140px; background: linear-gradient(#a9b8bb, #8ea1a6); }
+
+/* ───────── Kvadrat: ljust, färgblock, tät e-handel ───────── */
+.pv-kvadrat { background: #f6f1e7; color: #141414; font-family: var(--font-grotesk), sans-serif; font-weight: 600; }
+.pv-kvadrat header { gap: 34px; padding: 26px 56px; font-size: 17px; border-bottom: 2px solid #141414; }
+.pv-kvadrat header b { margin-right: auto; font-size: 36px; font-weight: 800; letter-spacing: -0.04em; }
+.pv-kvadrat header em { padding: 10px 20px; background: #141414; color: #f6f1e7; border-radius: 999px; font-size: 15px; }
+.pv-kvadrat-body { display: grid; grid-template-columns: 420px 1fr; gap: 50px; padding: 44px 56px; }
+.pv-kvadrat h3 { font-size: 78px; font-weight: 800; line-height: 0.96; letter-spacing: -0.045em; margin-bottom: 22px; }
+.pv-kvadrat-copy p { font-weight: 500; font-size: 20px; color: #4a4741; margin-bottom: 30px; max-width: 360px; }
+.pv-kvadrat-btn { display: inline-block; padding: 16px 30px; background: #ff6a3d; border: 2px solid #141414; font-size: 18px; box-shadow: 5px 5px 0 #141414; }
+.pv-kvadrat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px 22px; align-content: start; }
+.pv-kvadrat-grid li { display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; font-size: 16px; }
+.pv-kvadrat-tile { grid-column: 1 / -1; height: 238px; position: relative; overflow: hidden; border: 2px solid #141414; margin-bottom: 8px; }
+.pv-kvadrat-tile .shape { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); display: block; background: #f6f1e7; }
+.shape.arch { width: 120px; height: 160px; border-radius: 60px 60px 0 0; }
+.shape.ring { width: 140px; height: 140px; border-radius: 50%; background: transparent !important; border: 28px solid #f6f1e7; }
+.shape.sun { width: 150px; height: 150px; border-radius: 50%; background: #ff6a3d !important; box-shadow: 0 0 0 20px #f6f1e7; }
+.shape.block { width: 110px; height: 110px; background: #ff6a3d !important; transform: translate(-50%, -50%) rotate(12deg); }
+.pv-kvadrat-grid li b { font-weight: 800; }
+
+/* ───────── Källaren 14: centrerat, vinrött, kursiv serif ───────── */
+.pv-kallaren { background: radial-gradient(900px 500px at 50% 0%, #3a1520, #1a0c10 70%); color: #f1e6d6; font-family: var(--font-serif), Georgia, serif; }
+.pv-kallaren header { justify-content: center; gap: 52px; padding: 38px 0 0; font-family: var(--font-body), sans-serif; font-size: 16px; color: #c9b9a0; }
+.pv-kallaren header b { font-family: var(--font-serif), serif; font-style: italic; font-weight: 400; font-size: 30px; color: #f1e6d6; }
+.pv-kallaren-body { position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; padding-top: 52px; }
+.pv-kallaren-kicker { font-family: var(--font-body), sans-serif; font-size: 16px; color: #c9a25a; margin-bottom: 14px; }
+.pv-kallaren h3 { font-size: 92px; font-style: italic; font-weight: 300; line-height: 1; margin-bottom: 40px; }
+.pv-kallaren ul { width: 560px; display: grid; gap: 15px; margin-bottom: 40px; text-align: left; font-size: 22px; }
+.pv-kallaren li { display: flex; align-items: baseline; gap: 12px; }
+.pv-kallaren li i { flex: 1; border-bottom: 1px dotted rgb(201 162 90 / 0.5); transform: translateY(-5px); }
+.pv-kallaren li b { font-weight: 400; color: #c9a25a; font-family: var(--font-body), sans-serif; font-size: 18px; }
+.pv-kallaren-btn { padding: 15px 38px; border: 1px solid #c9a25a; color: #c9a25a; font-family: var(--font-body), sans-serif; font-size: 16px; }
+.pv-kallaren .plate { position: absolute; width: 330px; height: 330px; border-radius: 50%; top: 150px; background: radial-gradient(circle, #1a0c10 0 38%, #2d1a1f 39% 41%, #f1e6d6 42% 62%, #d8c8ae 63% 66%, #2d1a1f 67%); opacity: 0.9; }
+.pv-kallaren .plate.left { left: -120px; } .pv-kallaren .plate.right { right: -120px; transform: rotate(40deg); top: 300px; }
+
+/* ───────── Lindgren Redovisning: ljust, strukturerat, tryggt ───────── */
+.pv-lindgren { background: #f8fafd; color: #0f2a5c; font-family: var(--font-body), sans-serif; }
+.pv-lindgren header { gap: 38px; padding: 28px 64px; font-size: 17px; color: #4b5d80; background: #fff; border-bottom: 1px solid #e2e8f3; }
+.pv-lindgren header b { margin-right: auto; display: flex; align-items: center; gap: 12px; font-size: 26px; color: #0f2a5c; font-weight: 700; }
+.pv-lindgren header b i { width: 26px; height: 26px; border-radius: 8px; background: #2f6fed; box-shadow: inset -8px -8px 0 #1fa97a; }
+.pv-lindgren header em { padding: 11px 22px; background: #0f2a5c; color: #fff; border-radius: 8px; font-size: 16px; }
+.pv-lindgren-body { display: grid; grid-template-columns: 1fr 440px; gap: 80px; padding: 80px 64px; align-items: center; }
+.pv-lindgren h3 { font-size: 68px; line-height: 1.04; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 24px; }
+.pv-lindgren-body > div > p { font-size: 22px; color: #4b5d80; margin-bottom: 36px; max-width: 540px; }
+.pv-lindgren-actions { display: flex; align-items: center; gap: 28px; }
+.pv-lindgren-btn { padding: 17px 32px; background: #2f6fed; color: #fff; border-radius: 10px; font-size: 18px; font-weight: 600; }
+.pv-lindgren-link { color: #2f6fed; font-weight: 600; font-size: 18px; }
+.pv-lindgren ul { background: #fff; border: 1px solid #e2e8f3; border-radius: 18px; padding: 14px 32px; box-shadow: 0 24px 50px -24px rgb(15 42 92 / 0.25); }
+.pv-lindgren li { display: flex; gap: 18px; padding: 24px 0; align-items: flex-start; }
+.pv-lindgren li + li { border-top: 1px solid #e2e8f3; }
+.pv-lindgren li svg { flex: none; width: 34px; height: 34px; padding: 7px; border-radius: 50%; background: #e3f6ee; color: #1fa97a; }
+.pv-lindgren li b { display: block; font-size: 21px; }
+.pv-lindgren li span { color: #4b5d80; font-size: 17px; }
+
+/* ───────── Vektor: mörkt, tekniskt, cyan signal ───────── */
+.pv-vektor { background: #05080c; color: #d9f6f8; font-family: var(--font-body), sans-serif; background-image: linear-gradient(rgb(53 214 224 / 0.07) 1px, transparent 1px), linear-gradient(90deg, rgb(53 214 224 / 0.07) 1px, transparent 1px); background-size: 60px 60px; }
+.pv-vektor::after { content: ""; position: absolute; width: 700px; height: 700px; right: -160px; top: -240px; background: radial-gradient(circle, rgb(53 214 224 / 0.25), transparent 65%); }
+.pv-vektor header { position: relative; z-index: 1; gap: 38px; padding: 30px 64px; font-size: 17px; color: #8db3b8; }
+.pv-vektor header b { margin-right: auto; font-family: var(--font-mono); font-size: 26px; color: #d9f6f8; font-weight: 500; }
+.pv-vektor header b i { color: #35d6e0; font-style: normal; }
+.pv-vektor header em { padding: 10px 20px; border: 1px solid #35d6e0; color: #35d6e0; border-radius: 6px; font-size: 16px; }
+.pv-vektor-body { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 470px; gap: 56px; padding: 70px 64px; align-items: center; }
+.pv-vektor-kicker { font-family: var(--font-mono); font-size: 16px; color: #35d6e0; margin-bottom: 22px; }
+.pv-vektor h3 { font-size: 88px; line-height: 1; font-weight: 600; letter-spacing: -0.04em; margin-bottom: 26px; }
+.pv-vektor-lead { font-size: 22px; color: #8db3b8; max-width: 520px; margin-bottom: 38px; }
+.pv-vektor-actions { display: flex; gap: 18px; }
+.pv-vektor-btn { padding: 16px 30px; background: #35d6e0; color: #021417; font-weight: 700; border-radius: 6px; font-size: 18px; }
+.pv-vektor-ghost { padding: 16px 28px; border: 1px solid #28464b; border-radius: 6px; font-size: 18px; }
+.pv-vektor-term { background: rgb(8 14 20 / 0.92); border: 1px solid #1e3a3f; border-radius: 12px; box-shadow: 0 0 80px -20px rgb(53 214 224 / 0.4); overflow: hidden; }
+.pv-vektor-term .bar { display: flex; gap: 8px; align-items: center; padding: 14px 18px; border-bottom: 1px solid #1e3a3f; }
+.pv-vektor-term .bar i { width: 11px; height: 11px; border-radius: 50%; background: #1e3a3f; }
+.pv-vektor-term .bar span { margin-left: 10px; font-family: var(--font-mono); font-size: 14px; color: #8db3b8; }
+.pv-vektor-term pre { margin: 0; padding: 24px; font-family: var(--font-mono); font-size: 17px; line-height: 1.7; white-space: pre; }
+.pv-vektor-term .c { color: #4d6e73; } .pv-vektor-term .k { color: #c792ff; } .pv-vektor-term .f { color: #35d6e0; }
+.pv-vektor-term .s { color: #ffd27a; } .pv-vektor-term .ok { color: #6ee7b7; }
